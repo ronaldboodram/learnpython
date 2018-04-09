@@ -108,3 +108,17 @@ Ronald = Person('Ronald',29)
 Ronald.setSex('M')
 print('Ronald sex is: ' + str(Ronald.getSex()))
 
+
+#Inheritance, Child classes are declared much like parent class and like functions, you pass in their parents in the parenthesis
+
+class Child(Person):
+    def __init__(self):
+        print("\nchild constructor")
+
+    def getName(self):
+        return "\nParent method overridden"
+
+c = Child()
+print(c.getName())
+
+
